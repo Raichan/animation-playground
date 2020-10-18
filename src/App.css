@@ -22,7 +22,7 @@ body {
 }
 
 #navigation {
-  background-color:grey;
+  background-color: #4d4d4d;
   padding-bottom: 10px;
 }
 
@@ -34,6 +34,7 @@ body {
   display: inline;
   margin: 20px;
   font-size: xx-large;
+  border-radius: 50%;
 }
 
 #title {
@@ -98,28 +99,36 @@ pre {
   flex: 1;
 }
 
-#main {
+.main {
   background-image: linear-gradient(to bottom right, #ff4e50 0%, #f9d423 100%);
 }
 
-#main p {
+#content p {
   font-size: large;
-  max-width: 20%;
-  margin: auto;
   padding: 50px;
   line-height: 2;
+  max-width: 220px;
+  margin: auto;
 }
 
-#climate {
+.icon {
+  font-size: xx-large;
+}
+
+.climate {
   background-image: linear-gradient(to bottom right, #16a085 0%, #f4d03f 100%);
 }
 
-#scroll {
+.scroll {
   background-image: linear-gradient(to bottom right, #d558c8 0%, #24d292 100%);
 }
 
-#kawaii {
+.kawaii {
   background-image: linear-gradient(to bottom right, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+
+.kawaii div {
+  padding: 20px;
 }
 
 #footer {

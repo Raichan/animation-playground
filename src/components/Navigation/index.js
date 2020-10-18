@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { GiBlackCat, GiHolyOak, GiScrollUnfurled } from "react-icons/gi";
 import { Link } from 'react-router-dom'
 
+
 class Navigation extends Component {
     render() {
       return (

@@ -1,10 +1,18 @@
 import React, { Component } from 'react'
 
 class Scroll extends Component {
-    render() {
+  componentDidMount() {
+    const { changePage } = this.props;
+    changePage("scroll");
+ }
+
+  render() {
       return (
         <div id="scroll">
-            <h1>Scroll</h1>
+            <p>This is placeholder text.</p>
+            <p>When this demo is done...</p>
+            <p>...these bits of text should appear...</p>
+            <p>...one after another.</p>
         </div>
       );
     }
