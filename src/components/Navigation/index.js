@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom'
 class Navigation extends Component {
     render() {
       return (
-        <div>
-            <Link to="/"><h2>Web Animation Playground</h2></Link>
-            <h4>By Laura Sirola</h4>
+        <div id="navigation">
+            <div id="title">
+              <Link to="/"><h1>Web Animation Playground</h1></Link>
+            </div>
             <ul>
                 <li>
                     <Link to="/climate"><GiHolyOak/></Link>

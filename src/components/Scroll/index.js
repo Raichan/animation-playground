@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Scroll extends Component {
     render() {
       return (
-        <div>
+        <div id="scroll">
             <h1>Scroll</h1>
         </div>
       );
