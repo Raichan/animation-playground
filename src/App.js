@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Navigation from './components/Navigation'
-import Main from './components/Main'
-import Climate from './components/Climate'
-import Scroll from './components/Scroll'
-import Kawaii from './components/Kawaii'
+import Navigation from './components/Navigation.js'
+import Main from './components/Main.js'
+import Climate from './components/Climate.js'
+import Scroll from './components/Scroll.js'
+import Kawaii from './components/Kawaii.js'
 
 import './App.css';
 
