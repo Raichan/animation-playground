@@ -103,7 +103,7 @@ pre {
   background-image: linear-gradient(to bottom right, #ff4e50 0%, #f9d423 100%);
 }
 
-#scroll p {
+#main p, #scroll p {
   font-size: large;
   padding: 50px;
   line-height: 2;
@@ -144,7 +144,7 @@ pre {
 }
 
 #climate div p {
-  font-size: x-small;
+  font-size: 3vw;
   line-height: normal;
 }
 
@@ -156,8 +156,10 @@ pre {
   background-image: linear-gradient(to bottom right, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
 }
 
-.kawaii div {
+#kawaii div {
   padding: 20px;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 #footer {
