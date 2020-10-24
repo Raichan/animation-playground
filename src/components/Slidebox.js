@@ -16,8 +16,6 @@ class Slidebox extends Component {
   render() {
       return (
         <motion.div className="slidebox"
-            initial="hide"
-            animate="show"
             variants={{
               hide: this.props.slide === "right" ? slideRight : slideLeft,
               show: {

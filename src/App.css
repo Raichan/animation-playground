@@ -37,8 +37,11 @@ body {
   border-radius: 50%;
 }
 
-#title {
-  padding: 15px;
+#footer {
+  background-color: black;
+  color: var(--text-color);
+  padding: 5px;
+  font-size: small;
 }
 
 /* FONTS */
@@ -103,12 +106,12 @@ pre {
   background-image: linear-gradient(to bottom right, #ff4e50 0%, #f9d423 100%);
 }
 
-#main p, #scroll p {
+#main p {
   font-size: large;
-  padding: 50px;
   line-height: 2;
   max-width: 220px;
   margin: auto;
+  padding: 50px;
 }
 
 .icon {
@@ -143,13 +146,34 @@ pre {
   border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-#climate div p {
+#climate div {
   font-size: 3vw;
   line-height: normal;
 }
 
+@media screen and (min-width: 769px) {
+  #climate div {
+    font-size: 2vw;
+  }
+}
+
 .scroll {
   background-image: linear-gradient(to bottom right, #d558c8 0%, #24d292 100%);
+}
+
+#scroll {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#scroll p {
+  max-width: 20%;
+  font-size: large;
+  padding: 50px;
+  line-height: 2;
+  margin: 50px auto;
+  background-color: rgba(172, 24, 160, 0.2);
 }
 
 .kawaii {
@@ -162,14 +186,61 @@ pre {
   margin: 0 auto;
 }
 
-#footer {
-  background-color: black;
-  color: var(--text-color);
-  padding: 5px;
-  font-size: small;
+.demo{
+  background-image: linear-gradient(to bottom right, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
 }
 
+#demo {
+  margin: 50px;
+}
+
+.examples {
+  clear: both;
+  margin-top: 20px;
+}
+
+.rectangle {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: #0d00ff;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box {
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+
 /* SMALLER COMPONENTS */
+
+#title {
+  padding: 15px;
+}
 
 a {
   color: var(--text-color);

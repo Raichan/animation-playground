@@ -1,21 +1,11 @@
 import React, { Component } from 'react'
-import { motion } from "framer-motion"
 
 class Textbox extends Component {
   render() {
       return (
-        <motion.p id="scroll"
-            variants={{
-                hide: {
-                    opacity: 0
-                },
-                show: {
-                    opacity: 1
-                }
-            }}
-        >
+        <p>
             {this.props.text}
-        </motion.p>
+        </p>
       );
     }
   }

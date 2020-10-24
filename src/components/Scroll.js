@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { motion } from "framer-motion"
+import Scrollbox from './Scrollbox.js'
 import Textbox from './Textbox.js'
 
 class Scroll extends Component {
@@ -7,27 +7,16 @@ class Scroll extends Component {
     const { changePage } = this.props;
     changePage("scroll");
  }
-
-  render() {
+ render() {
       return (
-        <motion.div id="scroll"
-          initial="hide"
-          animate="show"
-          variants={{
-            show: {
-              transition: {
-                staggerChildren: 1
-              }
-            }
-          }}
-        >
-            <Textbox text="This is placeholder text."/>
-            <Textbox text="When this demo is done..."/>
-            <Textbox text="...these bits of text should appear..."/>
-            <Textbox text="...one after another."/>
-        </motion.div>
+        <div id="scroll">
+            <Textbox text="This is a long scroll of text..."/>
+            <Textbox text="...showing bits one by one..."/>
+            <Textbox text="...as you scroll down the page..."/>
+            <Textbox text="...in a really nice-looking way!"/>
+        </div>
       );
-    }
+ }
   }
 
 export default Scroll;

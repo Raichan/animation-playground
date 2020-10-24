@@ -14,7 +14,11 @@ class Climate extends Component {
           initial="hide"
           animate="show"
           variants={{
+            hide: {
+              opacity: 0
+            }, 
             show: {
+              opacity: 1,
               transition: {
                 staggerChildren: 1
               }
