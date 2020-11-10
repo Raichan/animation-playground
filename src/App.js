@@ -7,6 +7,7 @@ import Climate from './components/Climate.js'
 import Scroll from './components/Scroll.js'
 import Kawaii from './components/Kawaii.js'
 import Demo from './components/Demo.js'
+import Ease from './components/Ease.js'
 
 import './App.css';
 
@@ -32,6 +33,7 @@ class App extends Component {
               <Route exact path="/scroll" render={() => <Scroll changePage={this.changePage} />}/>
               <Route exact path="/kawaii" render={() => <Kawaii changePage={this.changePage} />}/>
               <Route exact path="/demo" render={() => <Demo changePage={this.changePage} />}/>
+              <Route exact path="/ease" render={() => <Ease changePage={this.changePage} />}/>
             </Switch>
           </div>
           <div id="footer"><a href="https://www.laurasirola.com">Made by Laura Sirola</a></div>

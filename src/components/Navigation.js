@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { GiWhiteCat, GiHolyOak, GiScrollUnfurled, GiFluffySwirl } from "react-icons/gi";
+import { GiWhiteCat, GiHolyOak, GiScrollUnfurled, GiFluffySwirl, GiDropletSplash } from "react-icons/gi";
 import { Link } from 'react-router-dom'
 
 
@@ -22,6 +22,9 @@ class Navigation extends Component {
                 </li>
                 <li>
                     <Link to="/demo"><GiFluffySwirl/></Link>
+                </li>
+                <li>
+                    <Link to="/ease"><GiDropletSplash/></Link>
                 </li>
             </ul>
         </div>

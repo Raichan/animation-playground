@@ -13,7 +13,9 @@ const slideRight = {
 }
 
 class Slidebox extends Component {
+
   render() {
+
       return (
         <motion.div className="slidebox"
             variants={{
@@ -22,12 +24,13 @@ class Slidebox extends Component {
                 opacity: 1,
                 x: 0,
                 transition: {
-                  duration: 1
+                  ease: "easeOut",
+                  duration: 3
                 }
               }
             }}
           >
-            <Textbox text={this.props.text}/>
+            <Textbox icon={this.props.icon} textSide={this.props.slide} text={this.props.text}/>
           </motion.div>
       );
     }

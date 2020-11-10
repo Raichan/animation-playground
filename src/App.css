@@ -2,7 +2,6 @@
 
 :root {
   --text-color: #dadce1;
-  --nav-size: 60px;
 }
 
 * { /*Clear all values*/
@@ -120,40 +119,60 @@ pre {
 
 .climate {
   background-image: linear-gradient(to bottom right, #16a085 0%, #f4d03f 100%);
+  overflow-x: hidden;
 }
 
-#climate div {
-  padding: 10px;
+#climate {
   margin: 20px 0;
+}
+
+#climate > div {
+  padding: 10px;
+  margin: 30px 0;
   min-height: 50px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   background-color: rgba(70, 104, 81, 0.2);
   border-top: 1px solid rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  line-height: normal;
+  width: 90%;
 }
 
-#climate div:nth-child(odd){
+#climate > div:nth-child(odd){
   margin-right: auto;
-  width: 50%;
   border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-#climate div:nth-child(even){
+#climate > div:nth-child(even){
   margin-left: auto;
-  width: 50%;
   border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-#climate div {
-  font-size: 3vw;
-  line-height: normal;
+#climate > div:last-child {
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+#climate > div:last-child div {
+  font-family: Lora;
+  font-size: larger;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.burnText {
+  color: #fff;
+	text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
 }
 
 @media screen and (min-width: 769px) {
-  #climate div {
+  #climate > div {
     font-size: 2vw;
+    width: 50%;
   }
 }
 
@@ -167,8 +186,8 @@ pre {
   flex-direction: column;
 }
 
-#scroll p {
-  max-width: 20%;
+#scroll > div {
+  min-width: 20%;
   font-size: large;
   padding: 50px;
   line-height: 2;
@@ -235,6 +254,32 @@ pre {
   margin-right: 0;
 }
 
+.ease {
+  background-image: linear-gradient(to bottom right, #330867 0%, #30cfd0 100%);
+}
+
+#ease {
+  color: white;
+  font-size: large;
+  margin: 30px;
+}
+
+.easeRow {
+  margin: 15px auto;
+}
+
+.easeRow > div {
+  display: inline-block;
+  min-width: 15%;
+}
+
+.easeName {
+  text-align: left;
+}
+
+.line {
+  height: 20px;
+}
 
 /* SMALLER COMPONENTS */
 
@@ -256,4 +301,20 @@ a svg {
 a svg:hover {
   filter: brightness(1.2);
   background: gray;
+}
+
+.textbox {
+  display: flex;
+}
+
+.xxIcon {
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.slideLeft {
+  flex-direction: row-reverse;
 }

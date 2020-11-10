@@ -20,16 +20,55 @@ class Climate extends Component {
             show: {
               opacity: 1,
               transition: {
-                staggerChildren: 1
+                ease: "easeOut",
+                duration: 3,
+                staggerChildren: 2
               }
             }
           }}
         >
-          <Slidebox slide="left" text="Mostly due to human activity, global temperatures have increased by about 1° Celsius in the past century."/>
-          <Slidebox slide="right" text="Arctic sea ice and glaciers are melting, sea levels are rising, droughts, forest fires and other natural disasters are getting worse."/>
-          <Slidebox slide="left" text="At the same time, we're in the middle of the sixth mass extinction. A million species are in danger of dying out."/>
-          <Slidebox slide="right" text="100 companies cause 71% of the carbon dioxide emissions."/>
-          <Slidebox slide="left" text="We need climate legislation and corporations being held accountable. NOW."/>
+          <Slidebox slide="left" icon="tractor" text="European Parliament accepted the Common Agricultural Policy. 387 billion euros for the next 7 years, over a third of the EU budget."/>
+          <Slidebox slide="right" icon="cow" text="This CAP benefits factory farming and other harmful practices. It's not in line with the EU Green Deal or the Paris Agreement."/>
+          <Slidebox slide="left" icon="ecology" text="EU is abandoning our climate goals and our future in favour of the agricultural lobby. The European Commission must fix this."/>
+          <motion.div
+            variants={{
+              hide: {
+                opacity: 0
+              }, 
+              show: {
+                opacity: 1
+            }
+            }}
+          >
+            <motion.div className="stackText"
+              variants={{
+                hide: {
+                  opacity: 0
+                }, 
+                show: {
+                  opacity: [1, 0, 1],
+                  transition: {
+                    duration: 3,
+                    ease: "easeOut"
+                  }
+                }
+              }}
+            >#WithdrawTheCap</motion.div>
+            <motion.div className="stackText burnText"
+              variants={{
+                hide: {
+                  opacity: 0
+                }, 
+                show: {
+                  opacity: [0, 1, 0],
+                  transition: {
+                    duration: 4,
+                    ease: "easeOut"
+                  }
+                }
+              }}
+            >#WithdrawTheCap</motion.div>
+          </motion.div>
         </motion.div>
       );
     }
