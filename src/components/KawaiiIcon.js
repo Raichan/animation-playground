@@ -1,5 +1,17 @@
-import React, { Component } from 'react';
-import { Backpack, Browser, Cat, Chocolate, CreditCard, File, Ghost, IceCream, Mug, Planet, SpeechBubble } from 'react-kawaii'
+import React, { Component } from "react";
+import {
+  Backpack,
+  Browser,
+  Cat,
+  Chocolate,
+  CreditCard,
+  File,
+  Ghost,
+  IceCream,
+  Mug,
+  Planet,
+  SpeechBubble,
+} from "react-kawaii";
 
 // Creates any React Kawaii icon.
 // Tag: icon name
@@ -8,26 +20,26 @@ import { Backpack, Browser, Cat, Chocolate, CreditCard, File, Ghost, IceCream, M
 // Color: hex color
 
 class KawaiiIcon extends Component {
-    components = {
-        backpack: Backpack,
-        browser: Browser,
-        cat: Cat,
-        chocolate: Chocolate,
-        creditcard: CreditCard, 
-        file: File, 
-        ghost: Ghost, 
-        icecream: IceCream, 
-        mug: Mug, 
-        planet: Planet, 
-        speechbubble: SpeechBubble
-    };
-    render() {
-       const TagName = this.components[this.props.tag || Backpack];
-       const Size = this.props.size || 150;
-       const Mood = this.props.mood || "sad";
-       const Color = this.props.color || "white";
+  components = {
+    backpack: Backpack,
+    browser: Browser,
+    cat: Cat,
+    chocolate: Chocolate,
+    creditcard: CreditCard,
+    file: File,
+    ghost: Ghost,
+    icecream: IceCream,
+    mug: Mug,
+    planet: Planet,
+    speechbubble: SpeechBubble,
+  };
+  render() {
+    const TagName = this.components[this.props.tag || Backpack];
+    const Size = this.props.size || 150;
+    const Mood = this.props.mood || "sad";
+    const Color = this.props.color || "white";
 
-       return <TagName size={Size} mood={Mood} color={Color}/>
-    }
+    return <TagName size={Size} mood={Mood} color={Color} />;
+  }
 }
 export default KawaiiIcon;

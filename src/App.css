@@ -4,7 +4,8 @@
   --text-color: #dadce1;
 }
 
-* { /*Clear all values*/
+* {
+  /*Clear all values*/
   margin: 0;
   padding: 0;
   border: 0;
@@ -46,45 +47,45 @@ body {
 /* FONTS */
 
 h1 {
-	font-family: Lora;
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 700;
-	line-height: 26.4px;
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
 }
 
 h3 {
-	font-family: Lora;
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 700;
-	line-height: 15.4px;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
 }
 
 p {
-	font-family: Merriweather;
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 20px;
+  font-family: Merriweather;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 blockquote {
-	font-family: Merriweather;
-	font-size: 21px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 30px;
+  font-family: Merriweather;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 pre {
-	font-family: Merriweather;
-	font-size: 13px;
-	font-style: normal;
+  font-family: Merriweather;
+  font-size: 13px;
+  font-style: normal;
   font-variant: normal;
 }
 
@@ -137,12 +138,12 @@ pre {
   width: 90%;
 }
 
-#climate > div:nth-child(odd){
+#climate > div:nth-child(odd) {
   margin-right: auto;
   border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-#climate > div:nth-child(even){
+#climate > div:nth-child(even) {
   margin-left: auto;
   border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
@@ -166,7 +167,8 @@ pre {
 
 .burnText {
   color: #fff;
-	text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+  text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000,
+    0px -18px 40px red;
 }
 
 @media screen and (min-width: 769px) {
@@ -196,7 +198,13 @@ pre {
 }
 
 .kawaii {
-  background-image: linear-gradient(to bottom right, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+  background-image: linear-gradient(
+    to bottom right,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
 }
 
 #kawaii div {
@@ -205,8 +213,13 @@ pre {
   margin: 0 auto;
 }
 
-.demo{
-  background-image: linear-gradient(to bottom right, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+.demo {
+  background-image: linear-gradient(
+    to bottom right,
+    #2cd8d5 0%,
+    #c5c1ff 56%,
+    #ffbac3 100%
+  );
 }
 
 #demo {
