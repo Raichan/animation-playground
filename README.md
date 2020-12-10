@@ -6,8 +6,9 @@ Built with React, Firebase and Framer Motion.
 
 ## Installation
 
-```git clone https://github.com/Raichan/animation-playground.git
-cd animation playground
+```
+git clone https://github.com/Raichan/animation-playground.git
+cd animation-playground
 npm install
 npm start
 ```
